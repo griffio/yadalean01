@@ -1,0 +1,22 @@
+{:api
+ {:title "Scan Data"
+  :links
+  {:describedBy "https://mport.com/api-docs/scan-data"
+   :author "mailto:api@mport.com?subject=scan-data+json-home"}}
+ :resources
+ {:tag:https://mport.com/api-docs/scan-data/resource/scans
+  {:hints
+   {:formats {:application/edn {}, :application/json {}}
+	:allow ["GET"]
+	:authSchemes [{:scheme "Bearer"}]}
+   :href "/scan/"}
+  :tag:https://mport.com/api-docs/scan-data/resource/scan
+  {:hints
+   {:formats {:application/edn {}, :application/json {}}
+	:acceptRanges ["items"]
+	:acceptPut ["application/json" "application/edn"]
+	:acceptPost ["application/json" "application/edn"]
+	:allow ["GET" "POST" "PUT" "DELETE"]
+	:authSchemes [{:scheme "Bearer"}]}
+   :hrefVars {:scan-id "https://mport.com/api-docs/scan-data/param/scan-id"}
+   :hrefTemplate "/scan/{scan-id}"}}}
