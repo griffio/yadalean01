@@ -1,10 +1,27 @@
 # yadalean01
 
-A Clojure library designed to ... well, that part is up to you.
+yada lean profile
+
+https://github.com/juxt/yada/tree/master/bundles/lean
+
+Simple example of a resource and using content response types
 
 ## Usage
 
-FIXME
+```
+lein run
+```
+
+http://localhost:3000
+
+Using a web browser the content will return html
+
+Using a Accept type of "application/json-home" will return json
+
+Built in render-map support for edn to html is added with:
+```
+yada/json-html
+```
 
 ## License
 
