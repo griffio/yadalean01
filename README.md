@@ -16,7 +16,7 @@ http://localhost:3000
 
 Using a web browser the content will return html
 
-Using a Accept type of "application/json-home" will return json
+Using the http header with Accept Type "application/json-home" will return json
 
 Built in render-map support for edn to html is added with:
 ```
